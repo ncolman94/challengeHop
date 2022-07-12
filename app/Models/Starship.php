@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Starship extends Model
+{
+    use HasFactory;
+
+    protected $table = 'starship';
+
+    protected $fillable = [
+        'starship_id',
+        'name',
+        'count',
+    ];
+
+    protected $hidden = ['updated_at', 'created_at'];
+}
